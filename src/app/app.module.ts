@@ -22,7 +22,9 @@ import { DataStoreService } from './data-store.service';
   imports: [
     BrowserModule, AppRouteModule
   ],
-  providers: [ DataStoreService ],
+  providers: [
+    { provide: DataSource, useClass: "DataStoreService" }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
