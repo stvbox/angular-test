@@ -1,0 +1,11 @@
+<h1>
+  Управляемая шаблоном форма
+</h1>
+<form #f="ngForm" >
+  <input name="login" ngModel />
+  <div ngModelGroup="grp" >
+    <input name="pwd[0]" ngModel /><br />
+    <input name="pwd[1]" ngModel />
+  </div>
+</form>
+{{ f.value | json }}

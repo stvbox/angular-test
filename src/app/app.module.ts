@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MainCmpComponent } from './main-cmp/main-cmp.component';
@@ -9,6 +10,9 @@ import { ParamCmpComponent } from './param-cmp/param-cmp.component';
 import { Inner1Component } from './inner1/inner1.component';
 import { Inner2Component } from './inner2/inner2.component';
 import { DataStoreService } from './data-store.service';
+import { FormsComponent } from './forms/forms.component';
+import { FormTplComponent } from './form-tpl/form-tpl.component';
+import { FormRctComponent } from './form-rct/form-rct.component';
 
 @NgModule({
   declarations: [
@@ -17,13 +21,16 @@ import { DataStoreService } from './data-store.service';
     SecondCmpComponent,
     ParamCmpComponent,
     Inner1Component,
-    Inner2Component
+    Inner2Component,
+    FormsComponent,
+    FormTplComponent,
+    FormRctComponent
   ],
   imports: [
-    BrowserModule, AppRouteModule
+    BrowserModule, AppRouteModule, FormsModule, ReactiveFormsModule
   ],
   providers: [
-    { provide: DataSource, useClass: "DataStoreService" }
+    { provide: DataStoreService, useClass: "DataStoreService" }
   ],
   bootstrap: [AppComponent]
 })

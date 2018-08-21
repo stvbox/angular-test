@@ -2,29 +2,31 @@
 
 <ul class="nav">
   <li class="nav-item">
-    <a class="nav-link" [routerLink]="['/']" >основная</a>
+    <a class="nav-link" [routerLink]="['/']">основная</a>
   </li>
   <li class="nav-item">
     <!--
       <a class="nav-link" [routerLink]="[{ outlets: {primary: 'sec', second: 'sec' }}]" >вторая</a>
     -->
-    <a class="nav-link" [routerLink]="['/sec']" >вторая</a>
+    <a class="nav-link" [routerLink]="['/sec']">вторая</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" [routerLink]="['/params', 100500]" >параметры</a>
+    <a class="nav-link" [routerLink]="['/params', 100500]">параметры</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" [routerLink]="['/params','']" >безПараметра</a>
+    <a class="nav-link" [routerLink]="['/params','']">безПараметра</a>
   </li>
   <li class="nav-item">
-      <a class="nav-link" [routerLink]="[{outlets: {primary: 'sec', second: 'sec'}}]" >вторая</a>
-    </li>
+    <a class="nav-link" [routerLink]="[{outlets: {primary: 'sec', second: 'sec'}}]">вторая</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="['/forms']" >формы</a>
+  </li>
 </ul>
 
-<div class="main-app-wrapper" >
+<div class="main-app-wrapper">
   <router-outlet></router-outlet>
-  <div class="green-border" >
-    <router-outlet name="second" ></router-outlet>
+  <div class="green-border">
+    <router-outlet name="second"></router-outlet>
   </div>
 </div>
-

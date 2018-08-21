@@ -1,0 +1,13 @@
+<h1>
+  Реактивная форма
+</h1>
+<form [formGroup]="formModel" >
+  <input formControlName="fio" />
+  <div formGroupName="fakeGroup" >
+    <input formControlName="fst" />
+    <input formControlName="sec" />
+  </div>
+  <button type="submit" ></button>
+</form>
+
+{{formModel.value | json}}

@@ -6,6 +6,7 @@ import { MainCmpComponent } from '../main-cmp/main-cmp.component';
 import { SecondCmpComponent } from '../second-cmp/second-cmp.component';
 import { Inner1Component } from '../inner1/inner1.component';
 import { Inner2Component } from '../inner2/inner2.component';
+import { FormsComponent } from '../forms/forms.component';
 
 const routes: Routes = [
   { path: '', component: MainCmpComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
     ]
   },
   { path: 'params/:id', component: ParamCmpComponent},
+  { path: 'forms', component: FormsComponent }
 ];
 
 @NgModule({
