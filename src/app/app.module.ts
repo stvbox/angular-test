@@ -13,6 +13,7 @@ import { DataStoreService } from './data-store.service';
 import { FormsComponent } from './forms/forms.component';
 import { FormTplComponent } from './form-tpl/form-tpl.component';
 import { FormRctComponent } from './form-rct/form-rct.component';
+import { FlexBoxComponent } from './flex-box/flex-box.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormRctComponent } from './form-rct/form-rct.component';
     Inner2Component,
     FormsComponent,
     FormTplComponent,
-    FormRctComponent
+    FormRctComponent,
+    FlexBoxComponent
   ],
   imports: [
     BrowserModule, AppRouteModule, FormsModule, ReactiveFormsModule
